@@ -56,7 +56,21 @@ exports.queryVersion = function queryVersion(clienttype, callback) {
 exports.queryVersionList = function queryVersionList(callback) {
   
   let sql =
-    "SELECT clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle FROM versions ORDER BY versions.v_id DESC";
+    "SELECT v_id,clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle FROM versions ORDER BY versions.v_id DESC";
+    
+  console.log(' 版本列表sql '+sql);
+  query(sql, function(err, rows) {
+    if (err) {
+      return console.error(err);
+    }
+    callback(err, rows);
+  });
+};
+
+exports.addVersion = function addVersion(callback) {
+  
+  let sql =
+    "SELECT clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle FROM versions";
     
   console.log(' 版本列表sql '+sql);
   query(sql, function(err, rows) {
