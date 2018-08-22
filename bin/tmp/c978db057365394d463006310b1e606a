@@ -1,0 +1,423 @@
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxec79bcb5bf904d86&redirect_uri=http%3A%2F%2Fliebian.jingyuxiaoban.com%2Fhome%2Findex%2Findex%3Fshare_id%3DoExNl02K9H5akj4NoExDpMA-x9IY%26bbchannel%3Dorigin%26referral_mobile%3D%26aid%3D1&response_type=code&scope=snsapi_userinfo&state=91677bf48d5326256ab2bbebcabff22a&connect_redirect=1#wechat_redirect
+
+<!DOCTYPE html>
+
+<html style="font-size: 18px;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <title>9.9英语外教课程包</title>
+    <!-- build:js js/fontbase.js -->
+    <script src="./res_files/hm.js"></script><script src="./res_files/fontbase.js"></script>
+    <!-- endbuild -->
+    <!-- 解释：build用来构架项目时候压缩代码 -->
+    <!-- build:css css/main.css -->
+    <link href="./res_files/common.css" rel="stylesheet">
+    <link href="./res_files/anim.css" rel="stylesheet">
+    <!-- 将所有的keyframes写在这里，方便复用 -->
+    <link href="./res_files/index.css" rel="stylesheet">
+    <link href="./res_files/cssloader.css" rel="stylesheet">
+    <!-- endbuild -->
+    <link href="./res_files/iosSelect.css" rel="stylesheet">
+    <!--<script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5d6f18594fa096a2fb3af27c52cf6038";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?91c68149e65e18e17a9571e1b3a14946";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head>
+
+<body>
+<!-- 如果是在微信里运行，在页面的最上方放一张隐藏的图片，作为默认的分享图片 -->
+<!-- loading -->
+<div class="page p0" style="display: none;">
+    <div class="p0-loading">
+        <div class=" ball-clip-rotate-pulse ">
+            <div class=" "></div>
+            <div class=" "></div>
+        </div>
+    </div>
+    <p class="p0-process">100%</p>
+</div>
+<!-- 第1页 -->
+<div class="page p1" style="display: block;">
+    <div class="p1-content">
+        <div class="p1-img-container " style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+            <div class="p1-img-item">
+                <img src="./res_files/322cfd8e7201bfee2b954a676628fd31.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item p1-timecountdown_container">
+                <img src="./res_files/activity_03.png" alt="" srcset="">
+                <div class="p1-countdown-left">
+                    <div class="p1-discount-div">
+                        <span class="p1-discount-company">¥</span>
+                        <span class="p1-discount">9.9</span>
+                    </div>
+                    <div class="p1-original-price-div">
+                        <p class="p1-ori-price">原价&nbsp;&nbsp;¥<span class="p1-ori-price-text">628</span></p>
+                        <p class="p1-des">狂欢大促，限时抢购</p>
+                    </div>
+                </div>
+                <div class="p1-countdown-container">
+                    <div class="p1-countdown-title">距离活动结束仅剩</div>
+                    <div class="p1-countdown text-center ">
+                        <div class="p1-time p1-time-day">2</div>
+                        <div class="double-dot">:</div>
+                        <div class="p1-time p1-time-hour">13</div>
+                        <div class="double-dot">:</div>
+                        <div class="p1-time p1-time-minit">04</div>
+                        <div class="double-dot">:</div>
+                        <div class="p1-time p1-time-second">03</div>
+                    </div>
+                </div>
+            </div>
+            <div class="p1-img-item relative-position dis-n">
+                <img src="./res_files/d408817faafb959e7faba2fc4b8eb704.png" alt="" srcset="">
+                <div class="p1-get-lesson-box">
+                    <div class="p1-lesson-title margin-fix">免费领取价值268元1对2同伴课</div>
+                    <form action="http://liebian.jingyuxiaoban.com/home/index/index?share_id=oExNl02K9H5akj4NoExDpMA-x9IY&amp;bbchannel=origin&amp;referral_mobile=micromessenger&amp;aid=1&amp;code=001f9KjW0rUnpU1nV7iW0foTjW0f9Kj6&amp;state=662c7e9e0ed76c3e55f7498e345a28a7" class="p1-lesson-form">
+                        <div class="p1-num-box margin-fix">
+                            <input readonly="readonly" type="text" maxlength="11" name="p1-num" class="p1-num " id="p1-num" placeholder="请输入手机号">
+                        </div>
+                        <div class="p1-vcode-box clearfix margin-fix">
+                            <input readonly="readonly" type="text" maxlength="6" name="vcode" class="p1-vcode fl" id="p1-vcode" placeholder="请输入验证码">
+                            <div class="p1-vcode-btn fr">
+                                获取验证码
+                            </div>
+                        </div>
+                        <div class="p1-lesson-sub margin-fix">立即领取</div>
+                    </form>
+                    <div class="p1-lesson-activity-rule margin-fix">
+                        <div class="p1-activity-item p1-activity-title">领取规则:</div>
+                        <div class="p1-activity-item p1-activity-cont">1.新用户注册成功后，1-3个工作日内，即有课程问联系您，
+                            为您安排体验课;
+                        </div>
+                        <div class="p1-activity-item p1-activity-cont">2.本活动最终解释权归鲸鱼小班（柔持英语）所以。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/d408817faafb959e7faba2fc4b8eb704.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/f8be62a13aefa3452fd5fac7682ee0db.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/7be8044e704c0210f1e6290a00f1a848.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/ef8fb33c92c3ef4bf53187794ed28c5d.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/ca6c80a46e1a65caa04a4d38fd27e212.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/22b4d759951a16bc719d1f5cb27f2df9.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/5219e4468eb5a27481b6a1233fd9ce33.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/448a6eb41dbbb26a09482f1416d013f3.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/4f4ca5c1db2c16052a05f32e07217996.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item">
+                <img src="./res_files/cf59232bb029b913633f966ee49f12e5.png" alt="" srcset="">
+            </div>
+            <div class="p1-img-item p1-last-img">
+                <img src="./res_files/c68c86595050595e291d2a97b8ff4dd5.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="p1-img-item p1-flash-sale-btn">
+        <img src="./res_files/activity_15.png" alt="" srcset="">
+    </div>
+    <div class="p1-advertise-img-container p1-advertise-img-animation">
+        <img src="./res_files/btn_jump2.png" alt="" srcset="">
+    </div>
+</div>
+<!-- 第2页 -->
+<div class="page p2">
+    <div class="p2-content" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <div class="p2-spread-info-div">
+            <img class="p2-header" src="./res_files/132">
+            <span class="p2-header-span">何以邀微微</span>
+            <div class="p2-spread-profit-div">
+                <span class="p2-spread-profit-span-width p2-spread-num">0</span>
+                <span class="p2-spread-profit-span-width p2-spread-money">0.00 <span class="p2-spread-money-unit">元</span></span>
+            </div>
+            <div class="p2-spread-profit-span-div">
+                <span class="p2-spread-profit-span-width p2-spread-num-span">成功推广人数</span>
+                <span class="p2-spread-profit-span-width p2-spread-money-span">已获得推广收益</span>
+            </div>
+        </div>
+        <div class="p2-rule-div">
+            <p class="p2-rule-title">活动规则：</p>
+            <p class="p2-rule-text">
+                                    </p><p class="p2-rule-text">
+                        (a)点击页面右侧“生成专属海报”将海报分享至您的微信朋友圈或微信好友，好友通过您的“专属海报”中的专属二维码，成功购买“少儿英语外教课包（1节体验课+3节在线直播课 + 一份少儿英语专业测评分级报告 +1名专属1对1课程服务顾问）”
+您将获得本次课程售卖全部收益9.9元，并即时存入您的微信钱包-零钱。                    </p>
+                                    <p class="p2-rule-text">
+                        (b)本课程限量5000份，售完为止，一经售出无法退换。                    </p>
+                                    <p class="p2-rule-text">
+                        (c)本活动中的体验课程只针对鲸鱼小班（原柔持英语）新注册用户，已注册老用户无法使用，请已注册老用户慎重购买，将无法退换。
+                    </p>
+                                    <p class="p2-rule-text">
+                        (d)本活动最终解释权归鲸鱼小班，即柔持（北京）科技有限公司所有。                    </p>
+                        </div>
+        <div class="p2-share-div">
+            <p class="p2-share-title">分享方式：</p>
+            <p class="p2-share-text">
+                方式一：&nbsp;&nbsp;将此页面链接通过微信分享到朋友圈或微信好友。
+            </p>
+            <p class="p2-share-text">
+                方式二：&nbsp;&nbsp;生成专属海报，将图片保存并分享到朋友圈或发送给微信好友/群聊。
+            </p>
+        </div>
+        <!-- <button class="goto-home">返回首页</button> -->
+        <div class="goto-home">
+            <img src="./res_files/p2_gohome.png" alt="">
+        </div>
+        <div class="p2-logo">
+            <img src="./res_files/p2_logo.png" alt="">
+        </div>
+    </div>
+    <div class="p2-advertise-img-container">
+        <img src="./res_files/p2_dialog_share.png" alt="" srcset="">
+    </div>
+</div>
+<!-- 第3页 -->
+<div class="page p3 scrollable">
+    <div class="p3-cont">
+        <!-- <div class="btn-common btn-next btn-touchable">下一页</div>
+      <div class="btn-common btn-prev btn-touchable">上一页</div> -->
+        <!--<img src="/static/home/img/crouse.png?v=36" alt="" class="p3-crouse">-->
+        <div class="p3-curriculum-div">
+            <div class="p3-curriculum-title">在线少儿英语-北美外教课程包  (4节*50分钟)</div>
+            <div class="p3-curriculum-msg-div">
+                <img src="./res_files/08355f8468e78e327a163324c23c8a68.png" class="p3-curriculum-img">
+                <div class="p3-curriculum-text">
+                    <p class="p3-curriculum-text-p">
+                        一节 少儿英语1对2，北美专业外教在线课程 (50分钟)
+三节 少儿英语在线绘本阅读直播课 (3节*50分钟)
+一份 少儿英语专业测评分级报告
+一名 专属1对1课程服务顾问                    </p>
+                </div>
+            </div>
+            <div class="p3-curriculum-bottom">
+                <div class="p3-curriculum-bottom-left">
+                    <span class="p3-discount-company">¥</span>
+                    <span class="p3-discount">9.9</span>
+                    <span class="p3-txt">每个手机号限购一个</span>
+                </div>
+                <div class="p3-curriculum-bottom-right">
+                    限时限量
+                </div>
+            </div>
+        </div>
+        <!-- 表单 -->
+        <div class="p3-form">
+            <form>
+                <div class="p3-form-item">
+                    <label for="phone" class="p3-form-label ">预留家长手机号:</label>
+                    <input name="phone" class="text" maxlength="11" id="phone">
+                </div>
+
+                <div class="p3-form-item vcode-div">
+                    <label for="vcode" class="p3-form-label">验证码:</label>
+                    <input name="vcode" id="vcode" maxlength="4" class="p3-input-vcode">
+                    <div class="p3-vcode-box">
+                        <div class="btn-getvcode ">获取验证码</div>
+                        <div class="p3-vcode-txt dp-n"><span class="p3-vcode-countdown">60s</span><span class="p3-vcode-hint">后重新获取验证码</span></div>
+                    </div>
+                </div>
+
+                <div class="p3-form-item">
+                    <label for="age" class="p3-form-label">孩子的年龄:</label>
+                    <input type="text" id="age" name="age" readonly="readonly">
+                    <span class="p3-form-shuxian">
+              <img src="./res_files/sanjiao.png" alt="" class="p3-form-sanjiao">
+            </span>
+                </div>
+            </form>
+            <div class="p3-introduce">
+                购买成功后，我们将以短信的形式通知您，并且您专属的课程顾问将在48小时内与您联系，请保持手机通畅。
+                <div class="red-color">请您务必填写正确的手机号，否则将无法顺利领取所购买的课程。
+本活动中的体验课程只针对鲸鱼小班（原柔持英语）新注册用户，已注册老用户无法使用，请已注册老用户慎重购买，将无法退换。</div>
+            </div>
+        </div>
+        <div class="p3-sale">
+            <p class="p3-sub">¥9.9
+                <span>立即支付</span>
+            </p>
+        </div>
+        <div>
+            <p class="p3-gohome">返回首页</p>
+        </div>
+    </div>
+    <div class="p3-footer" id="footer">
+        <!-- <img src="/static/home/img/p3-footer.png" alt=""> -->
+    </div>
+</div>
+<!--提示消息-->
+<div class="tip-box">
+    <div class="tip-infor"></div>
+</div>
+<div class="dialog d-loading" style="display: none;">
+    <div class="loading-div ab-c">
+    </div>
+</div>
+<div class="dialog d-share" style="font-size: 5.25938px;">
+    <div class="content" style="width: 561px; height: 935px;">
+        <div class="d-share-div">
+            <div class="share-img-container">
+                <img class="share-img" src="./res_files/a7fd55508753ac8b3171f547adb01b2c.jpg" alt="">
+                <div class="d-name-containner clearfix">
+                    <div class="user-img-contanier fl">
+                        <img src="./res_files/oExNl07wluLf8bIHysvr_Jq_9O-E.jpg" alt="" class="user-img round-img">
+                    </div>
+                    <div class="user-description fr">
+                        <p class="d-user-name">何以邀微微</p>
+                        <p class="d-user-text">邀请您购买北美外教礼包</p>
+                    </div>
+                </div>
+                <div class="qr-img-container">
+                    <div id="qrcode">
+
+                    <canvas width="157" height="157"></canvas><div class="qrcode-text"><span class="qrcode-text-span">扫码购买课程</span><br>分享即赚9.9元</div></div>
+                </div>
+                <img class="d-share-saveImg ab-f">
+            </div>
+            <div class="d-save-btn-container text-center">
+                长按保存图片
+                <img class="d-share-saveImg ab-f">
+            </div>
+            <!-- <div class="d-share-saveImg ab-f"></div> -->
+        </div>
+    </div>
+    <img class="d-close-btn d-close" src="./res_files/d-close.png">
+</div>
+<!--提示消息-->
+<div class="tip-box">
+    <div class="tip-infor"></div>
+</div>
+<!--老用户提示消息-->
+<div class="dialog d-old-user">
+	<div class="content" style="width: 561px; height: 935px;">
+		<div class="d-old-user-content">
+			<img src="./res_files/prompt-bg.png">
+			<img src="./res_files/prompt-sure-btn.png" class="d-old-user-btn d-close d-old-user-sure-btn">
+		</div>
+		<img src="./res_files/d-close-btn.png" class="d-user-close-btn d-close d-old-user-close-btn">
+	</div>
+</div>
+<!--支付成功提示消息-->
+<div class="dialog d-success-pay">
+	<div class="content" style="width: 561px; height: 935px;">
+		<div class="d-success-pay-content">
+			<img src="./res_files/success-pay.png" class="d-success-pay-img">
+		</div>
+		<img src="./res_files/d-close-btn.png" class="d-user-close-btn d-close">
+	</div>
+</div>
+<script>
+    var app = window.app || {
+        static: '/static/',
+        currentPage: 0,
+        root: '/static/home/index/',
+        apiRoot: '/home/',
+        currentPage: 0,
+        pages: {},
+        dialogs: {},
+        audios: {},
+        common: {},
+        isMultiLoad: true, //是否分步加载
+        qrCodePrefixUrl: '/',
+        user_id: 'oExNl07wluLf8bIHysvr_Jq_9O-E',
+        share_id: 'oExNl02K9H5akj4NoExDpMA-x9IY',
+        aid:'1',
+        affected_num: '0', //影响人数
+        bonus: '0.00', //收益
+        nickname: '何以邀微微', // 昵称
+        imgUrl: '', //头像
+        actity_end_time: '2018-06-07 00:00:00',
+        wxImg: 'http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKLdia68xVGq8XneZo26xwV50pl4WaWbluFLkIACq4qIFRXf908cUx1KVjoxSkoiaGdJSXJTb8d7ZUw/132',
+        userinfo: {},
+        actity_State: true
+    };
+    const ACTIVITY_UNOPENED = 100402; // 活动未开启
+    const ACTIVITY_AN_END = 100403; // 活动已结束
+    function getLink() {
+        if (window.location.host.indexOf('dev.benbun.com') >= 0) {
+            return 'http://dev.benbun.com/web/proj/rouchi_poster/public/';
+        } else {
+            return 'http://liebian.jingyuxiaoban.com/';
+        }
+    }
+    app.link = getLink();
+
+</script>
+
+<!-- <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.js"></script> -->
+
+<script src="./res_files/jweixin-1.0.0.js"></script>
+<script src="./res_files/jquery.min.2.2.4.js"></script>
+<script src="./res_files/jquery.countdown.js"></script>
+<!-- build:js js/lib.js -->
+<!-- lib目录下的js文件写在这里 -->
+<!-- endbuild -->
+<!-- build:js js/main.js -->
+<!--<script src="/static/home/js/lib/vconsole.min.js"></script>-->
+<script src="./res_files/iosSelect.js"></script>
+<script src="./res_files/iscroll.js"></script>
+<script src="./res_files/jquery.qrcode.min.js"></script>
+<script src="./res_files/html2canvas.min.js"></script>
+<!-- <script src="/static/home/js/jqMobileCheck.js"></script> -->
+<script src="./res_files/loader.js"></script>
+<script src="./res_files/app.js"></script>
+<script src="./res_files/common.js"></script>
+<script src="./res_files/p1.js"></script>
+<script src="./res_files/p2.js"></script>
+<script src="./res_files/p3.js"></script>
+<script src="./res_files/dialog.js"></script>
+<script src="./res_files/index.js"></script>
+<script src="./res_files/wxshare.js"></script>
+<script src="./res_files/landscape.js"></script><div style="background: black; position: fixed; width: 100%; height: 100%; left: 0px; top: 0px; text-align: center; z-index: 1000000; overflow: hidden; display: none;"><div style="position: absolute; top: 50%;   left: 50%; -webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)"><img style="height:150px" src="data:image/png;base64,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"><br><div style="height: 1.6rem; color: white; font-size: 18px; text-align: center;">竖屏浏览,体验更佳</div></div></div>
+<script src="./res_files/scroll.js"></script>
+<!-- endbuild -->
+<!--<script type="text/javascript">
+  (function () {
+    window.wxshare.config({
+      title: '只需9块9 北美在校外教请回家',
+      desc: '花9.9元，给孩子一次与世界交流的机会',
+      link: app.link + '?share_id=' + app.user_id + '&bbchannel=' + app.bbchannel,
+      imgUrl: app.link + 'static/home/img/share2.jpg'
+    });
+  }());
+</script>-->
+
+
+</body></html>

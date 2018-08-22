@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var uploadRouter = require('./routes/upload');
 var versionRouter = require('./routes/version');
+var editVersionRouter = require('./routes/editVersion');
 var app = express();
 
 // view engine setup
@@ -20,7 +21,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
- app.all('*', function(req, res, next) {
+
+
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/upload', uploadRouter);
+app.use('/versions', editVersionRouter);
+
+ app.all('/queryVersion', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "content-type");
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
@@ -28,10 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
     res.header("Content-Type", "application/json;charset=utf-8");
     next();
 });
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/upload', uploadRouter);
 app.use('/queryVersion', versionRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

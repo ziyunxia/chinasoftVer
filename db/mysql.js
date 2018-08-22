@@ -67,13 +67,13 @@ exports.queryVersionList = function queryVersionList(callback) {
   });
 };
 
-exports.addVersion = function addVersion(callback) {
+exports.addVersion = function addVersion(clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle,callback) {
   
   let sql =
-    "SELECT clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle FROM versions";
+    "INSERT INTO versions (clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle) VALUES (?,?,?,?,?,?,?);";
     
   console.log(' 版本列表sql '+sql);
-  query(sql, function(err, rows) {
+  query(sql,[clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle], function(err, rows) {
     if (err) {
       return console.error(err);
     }

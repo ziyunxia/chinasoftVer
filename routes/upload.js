@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var db = require("../db/mysql");
 var fs = require('fs');
+//var md5=require("md5");
+
 // 初始化Client
 var co = require('co');
 var OSS = require('ali-oss');
@@ -19,6 +22,18 @@ var multer  = require('multer');
 var upload = multer({ dest: './tmp/' });
 // 文件上传
 router.post('/', upload.single('file'), function(req, res, next) {
+	var version = req.body;
+	var highstVer = version.highstVer;
+	var clientType = version.clientType;
+	var lowestVer = version.lowestVer;
+	var compatiableVer = version.compatiableVer;
+	var describle = version.describle;
+	
+	/*console.log(highstVer);
+	console.log(clientType);
+	console.log(lowestVer);
+	console.log(compatiableVer);
+	console.log(describle);*/
     // 文件路径
     var filePath = './' + req.file.path;  
     console.log("------filepath----"+filePath);
@@ -41,14 +56,29 @@ router.post('/', upload.single('file'), function(req, res, next) {
               client.useBucket(ali_oss.bucket);
               var result = yield client.put(key, localFile);
               var fileSrc = 'http://oss-jyxb-file.oss-cn-beijing.aliyuncs.com/' + result.name;
-              console.log("---fileSrc----"+fileSrc)
+              console.log("---fileSrc----"+fileSrc);
+              var jiami = 'md5('+highstVer+')';
               // 上传之后删除本地文件
               fs.unlinkSync(localFile);
-              res.end(JSON.stringify({status:'100',msg:'上传成功',fileSrc:fileSrc})); 
+              db.addVersion(clientType,highstVer,lowestVer,compatiableVer,fileSrc,jiami,describle,function(err, rows) {
+						  	if (err) {
+						  		res.send(500);
+						  		console.log(err);
+						  	}else {
+						  		
+						  		/*db.queryVersionList(function(err, rows) {
+								  		console.log(rows.length+"---------length");
+								  		res.render('upVersion', { versions: rows });
+								   });*/
+						  		res.redirect("/versions");
+						  		
+						  	}
+						  });
+              //res.end(JSON.stringify({status:'100',msg:'上传成功',fileSrc:fileSrc})); 
             }).catch(function (err) {
               // 上传之后删除本地文件
               fs.unlinkSync(localFile);
-              res.end(JSON.stringify({status:'101',msg:'上传失败',error:JSON.stringify(err)})); 
+              res.send(JSON.stringify({status:'101',msg:'上传失败',error:JSON.stringify(err)})); 
             });
         }
     });

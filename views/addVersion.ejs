@@ -7,41 +7,63 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
 </head>
   <body>
-  	<form class="form-horizontal" method="post" enctype="multipart/form-data">
+  	
+  	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="/upload">
+  		
         <div class="container">
+        	<div class="row form-group">
+			<button type="button" class="btn btn-primary" onclick=window.location="/versions">查询列表</button>
+		</div>
             <div class="row" style="padding: 20px 0">
                 <h3>新增安装版本</h3>
             </div>
             <div class="row form-group">
-                <label class="control-label col-lg-1" for="name">名称</label>
+                <label class="control-label col-lg-1" for="highstVer">版本号</label>
                 <div class="col-lg-5 col-md-6">
-                    <input class="form-control" name="name" id="name" type="text">
+                    <input class="form-control" name="highstVer" id="highstVer" type="text">
                 </div>
             </div>
             <div class="row form-group">
-                <label class="control-label col-lg-1">内容</label>
+                <label for="name">类型</label>
+			    <label class="radio-inline">
+			        <input type="radio" name="clientType" id="clientType1" value="Android" checked> Android
+			    </label>
+			    <label class="radio-inline">
+			        <input type="radio" name="clientType" id="clientType2"  value="IOS"> IOS
+			    </label>
+            </div>
+            <div class="row form-group">
+			    <label class="control-label col-lg-1" for="inputfile">请选择文件：</label>
+			    <input type="file" id="inputfile" name="file">
+			</div>
+			
+            <div class="row form-group">
+                <label class="control-label col-lg-1" for="lowestVer">支持最低版本</label>
                 <div class="col-lg-5 col-md-6">
-                    <textarea class="form-control" rows="5"></textarea>
+                    <input class="form-control" name="lowestVer" id="lowestVer" type="text">
                 </div>
             </div>
             <div class="row form-group">
-                <label class="control-label col-lg-1">补充</label>
+                <label class="control-label col-lg-1" for="compatiableVer">兼容版本</label>
                 <div class="col-lg-5 col-md-6">
-                    <textarea class="form-control" rows="5"></textarea>
+                    <input class="form-control" name="compatiableVer" id="compatiableVer" type="text">
                 </div>
             </div>
             <div class="row form-group">
-					    <label class="control-label col-lg-1" for="inputfile">请选择文件：</label>
-					    <input type="file" id="inputfile">
-					  </div>
-					  <div class="row form-group">
-							<button type="submit" class="btn btn-primary btn-block">提交</button>
-					</div>
+                <label class="control-label col-lg-1">版本描述</label>
+                <div class="col-lg-5 col-md-6">
+                    <textarea class="form-control" rows="2" name="describle"></textarea>
+                </div>
+            </div>
+           
+			<div class="row form-group">
+				<button type="submit" class="btn btn-primary btn-block">提交</button>
+			</div>
         </div>
     </form>
-    <form action="/upload" method="post" enctype="multipart/form-data">
+   <!-- <form action="/upload" method="post" enctype="multipart/form-data">
 	    <input type="file" name="file" />
 	    <input type="submit" />
-		</form>
+		</form>-->
   </body>
 </html>

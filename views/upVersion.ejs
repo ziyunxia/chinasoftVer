@@ -11,7 +11,10 @@
 </head>
 <body>
 <div class="container table-responsive">
-	<h1 style="text-align: center;">版本列表</h1>
+	<h1 style="text-align: center;">版本列表</h1> 
+	<div class="row form-group">
+		<button type="button" class="btn btn-primary" onclick="add()">新增版本</button>
+	</div>
     <table class="table table-striped table-bordered table-hover table-condensed">
         <thead>
             <tr class="active">
@@ -22,7 +25,7 @@
                 <th>兼容版本</th>
                 <th>URL</th>
                 <th>版本描述</th>
-                <th>操作</th>
+                <!--<th>操作</th>-->
             </tr>
         </thead>
         <tbody>
@@ -54,13 +57,17 @@
                 <td>
                     <%=ver.describle%>
                 </td>
-                <td>编辑</td>
+                <!--<td>编辑</td>-->
             </tr>
             <%});%>
            
         </tbody>
     </table>
 </div>
- 
+ <script type="application/javascript">
+ 	function add(){ console.log(12);
+ 		window.location="/";
+ 	}
+ </script>
 </body>
 </html>
