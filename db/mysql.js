@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 
 var pool = mysql.createPool({
-  host: "192.168.60.217",
-  user: "shixq",
-  password: "shixq123",
+  host: "127.0.1",
+  user: "root",
+  password: "Rouch123456$",
   database: "upapk",
   port: "3306"
 });
@@ -23,7 +23,7 @@ var query = function(sql, sqlParam, callback) {
   });
 };
 
-
+//登录
 exports.queryUser = function queryUser(username, pwd, callback) {
   
   let sql =
@@ -38,7 +38,7 @@ exports.queryUser = function queryUser(username, pwd, callback) {
   });
 };
 
-
+//查询最新版本
 exports.queryVersion = function queryVersion(clienttype, callback) {
   
   let sql =
@@ -53,6 +53,7 @@ exports.queryVersion = function queryVersion(clienttype, callback) {
   });
 };
 
+//查询版本列表
 exports.queryVersionList = function queryVersionList(callback) {
   
   let sql =
@@ -67,13 +68,29 @@ exports.queryVersionList = function queryVersionList(callback) {
   });
 };
 
+//新增一个版本
 exports.addVersion = function addVersion(clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle,callback) {
   
   let sql =
     "INSERT INTO versions (clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle) VALUES (?,?,?,?,?,?,?);";
     
-  console.log(' 版本列表sql '+sql);
+  console.log(' 新增版本sql '+sql);
   query(sql,[clientType,highstVer,lowestVer,compatiableVer,URL,MD5,describle], function(err, rows) {
+    if (err) {
+      return console.error(err);
+    }
+    callback(err, rows);
+  });
+};
+
+//新增用户安装信息
+exports.addInstallInfo = function addInstallInfo(deviceId,phoneType,callback) {
+  
+  let sql =
+    "INSERT INTO install_info (deviceId,phoneType) VALUES (?,?);";
+    
+  console.log(' 新增用户安装信息sql '+sql);
+  query(sql,[deviceId,phoneType], function(err, rows) {
     if (err) {
       return console.error(err);
     }

@@ -4,9 +4,11 @@ var db = require("../db/mysql");
 var BaseResult = require('./BaseResult');
 router.get("/",function(req,res){ 					   
 	 var clientType = req.query.clientType;
-	 
+	 var deviceId = req.query.deviceId;
+	 var phoneType = req.headers['user-agent'];
 	 console.log('clientType='+clientType);
-	 console.log('User-Agent'+ req.headers['user-agent']);
+	 console.log('User-Agent'+ phoneType);
+	 
    db.queryVersion(clientType,function(err, rows) {
   	if (err) {
   		res.send(500);
@@ -17,23 +19,12 @@ router.get("/",function(req,res){
   		res.send(BaseResult.SUCCESS);
   	}
    });
+   
+   db.addInstallInfo(deviceId,phoneType,function(err, rows) {
+  	
+   });
+
+   
 });
 
-router.get('/list', function(req, res, next) {
-	db.queryVersionList(function(err, rows) {
-  	if (err) {
-  		res.send(500);
-  		console.log(err);
-  	}else {
-  		console.log(rows.length+"---------length");
-  		//BaseResult.SUCCESS.setData(rows[0]);
-  		//res.send(BaseResult.SUCCESS);
-  		res.render('upVersion', { versions: rows });
-  	}
-   });
-  	
-});
-router.get('/add', function(req, res, next) {
-  	res.render('addVersion', { title: '版本管理系统' });
-});
 module.exports = router;

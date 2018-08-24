@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var uploadRouter = require('./routes/upload');
 var versionRouter = require('./routes/version');
 var editVersionRouter = require('./routes/editVersion');
+var loginRouter = require('./routes/login');
 var app = express();
 
 // view engine setup
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/upload', uploadRouter);
 app.use('/versions', editVersionRouter);
+app.use('/login', loginRouter);
 
  app.all('/queryVersion', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

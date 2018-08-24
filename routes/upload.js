@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var db = require("../db/mysql");
 var fs = require('fs');
+var md5=require('md5-node');
+
 //var md5=require("md5");
 
 // 初始化Client
@@ -42,7 +44,7 @@ router.post('/', upload.single('file'), function(req, res, next) {
     var fileType = temp[temp.length - 1];
     var lastName = '.' + fileType;
     // 构建文件名
-    var fileName = Date.now() + lastName;
+    var fileName = 'jyxb/file/'+Date.now() + lastName;
     // 文件重命名
     fs.rename(filePath, fileName, (err) => {
         if (err) {
@@ -55,9 +57,9 @@ router.post('/', upload.single('file'), function(req, res, next) {
             co(function* () {
               client.useBucket(ali_oss.bucket);
               var result = yield client.put(key, localFile);
-              var fileSrc = 'http://oss-jyxb-file.oss-cn-beijing.aliyuncs.com/' + result.name;
+              var fileSrc = 'https://oss-jyxb-file.oss-cn-beijing.aliyuncs.com/' + result.name;
               console.log("---fileSrc----"+fileSrc);
-              var jiami = 'md5('+highstVer+')';
+              var jiami = md5(highstVer+""+fileSrc+""+clientType);
               // 上传之后删除本地文件
               fs.unlinkSync(localFile);
               db.addVersion(clientType,highstVer,lowestVer,compatiableVer,fileSrc,jiami,describle,function(err, rows) {
@@ -65,13 +67,7 @@ router.post('/', upload.single('file'), function(req, res, next) {
 						  		res.send(500);
 						  		console.log(err);
 						  	}else {
-						  		
-						  		/*db.queryVersionList(function(err, rows) {
-								  		console.log(rows.length+"---------length");
-								  		res.render('upVersion', { versions: rows });
-								   });*/
 						  		res.redirect("/versions");
-						  		
 						  	}
 						  });
               //res.end(JSON.stringify({status:'100',msg:'上传成功',fileSrc:fileSrc})); 

@@ -18,6 +18,6 @@ router.get('/', function(req, res, next) {
   	
 });
 router.get('/add', function(req, res, next) {
-  	res.render('addVersion', { title: '版本管理系统' });
+  	res.render('addVersion', { title: '新增版本' });
 });
 module.exports = router;
