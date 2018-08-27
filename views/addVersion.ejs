@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>新增安装版本</title>
     <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="../javascripts/jquery.min.js"></script>
 </head>
   <body>
   	
-  	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="/upload">
+  	<form class="form-horizontal" method="post" action="/versions/add">
   		
         <div class="container">
         	<div class="row form-group">
@@ -33,9 +33,16 @@
 			    </label>
             </div>
             <div class="row form-group">
+                <label class="control-label col-lg-1" for="highstVer">apk或者plist文件路径</label>
+                <div class="col-lg-5 col-md-6">
+                	<p id="URL_span"></p>
+                    <input class="form-control" name="URL" id="URL" type="hidden">
+                </div>
+            </div>
+            <!--<div class="row form-group">
 			    <label class="control-label col-lg-1" for="inputfile">请选择文件：</label>
 			    <input type="file" id="inputfile" name="file">
-			</div>
+			</div>-->
 			
             <div class="row form-group">
                 <label class="control-label col-lg-1" for="lowestVer">支持最低版本</label>
@@ -65,5 +72,68 @@
 	    <input type="file" name="file" />
 	    <input type="submit" />
 		</form>-->
+		<div class="container">
+		
+		<form id="uploadForm" enctype="multipart/form-data">
+		    <div class="row form-group">
+			    <label class="control-label col-lg-1" for="inputfile">请选择文件：</label>
+			    <input type="file" id="inputfile" name="file">
+			</div>
+		</form>
+		<div id="iphonediv">
+			<div class="row form-group">
+                <label class="control-label col-lg-1" for="lowestVer">ipa地址</label>
+                <div class="col-lg-5 col-md-6">
+                	<p id="ipaurl_span"></p>
+                    <input type="hidden"  id="ipaurl" ></input>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="control-label col-lg-1" for="lowestVer">57*57图片地址</label>
+                <div class="col-lg-5 col-md-6">
+                	<p id="57url_span"></p>
+                    <input type="hidden"   id="57url"/>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="control-label col-lg-1" for="lowestVer">512*512图片地址</label>
+                <div class="col-lg-5 col-md-6">
+                	<p id="512url_span"></p>
+                    <input type="hidden"  id="512url"/>
+                </div>
+            </div>
+			<button type="button" class="btn btn-primary " onclick="upload('ipaurl')">上传ipa</button>
+			<button type="button" class="btn btn-primary" onclick="upload('57url')">上传57*57图片</button>
+			<button type="button" class="btn btn-primary" onclick="upload('512url')">上传512*512图片</button>
+			<button type="button" class="btn btn-primary" onclick="upload('URL')" id="btn_uploadimg">上传 apk 或者 mainfest.plist 文件</button>
+		</div>
+		<div class="container">
+		
+		<script type="application/javascript">
+			function upload(spanId){
+				console.log(spanId);
+			   var fileObj = document.getElementById("inputfile").files[0]; // js 获取文件对象
+               if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+                   alert("请选择文件");
+                   return;
+               }
+              
+               $.ajax({
+                    url: '/upload',
+				    type: 'POST',
+				    cache: false,
+				    data: new FormData($('#uploadForm')[0]),
+				    processData: false,
+				    contentType: false,
+                    success: function (result) {
+                       console.log("result------"+result.data);
+                       $("#"+spanId).val(result.data);
+                       $("#"+spanId+"_span").text(result.data);
+                       console.log($("#"+spanId).val());
+                    }
+               });
+			}
+		
+		</script>
   </body>
 </html>
